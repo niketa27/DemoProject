@@ -46,7 +46,7 @@ public class HomePage {
 	{
 		Wishlist.click();
 	}
-	public void LoginApplication()
+	public void redirectToLoginPage()
 	{
 		logIn.click();
 	}
