@@ -5,8 +5,9 @@ package ApplicationPages;
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-	import junit.framework.Assert;
+
 
 	public class LoginPage {
 		
@@ -41,11 +42,14 @@ package ApplicationPages;
 		
 		public void DashBoardTitleVerification()
 		{
-			WebDriverWait wait = new WebDriverWait(driver, 20);
-			WebElement ele = wait.until(ExpectedConditions.visibilityOf(DashboardTitle));
+		//	WebDriverWait wait = new WebDriverWait(driver,40);
+			//WebElement ele = wait.until(ExpectedConditions.visibilityOf(DashboardTitle));
 			
-			String title= ele.getText();
+				String title = DashboardTitle.getText();
+		//	String title= ele.getText();
+			System.out.println(title);
 			Assert.assertEquals(title,"Account Dashboard View","DashboardTitle Not Verified");
+		
 			
 		}
 
