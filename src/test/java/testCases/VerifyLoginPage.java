@@ -29,9 +29,31 @@ public class VerifyLoginPage {
 	    Thread.sleep(3000);
 	    LoginPage Login = PageFactory.initElements(driver,LoginPage.class);
 	  //  Login.LoginToApplication("zope.niketa@gmail.com", "niketa123");
-	  Login.LoginToApplication(DataProviderFactory.getExcel().getData(0, 1, 0), DataProviderFactory.getExcel().getData(0, 1, 1));
-	  Login.DashBoardTitleVerification();
+	 // Login.LoginToApplication(DataProviderFactory.getExcel().getData(0, 1, 0), DataProviderFactory.getExcel().getData(0, 1, 1));
+	  //Login.DashBoardTitleVerification();
+	
+	 // Login.LoginToApplication(DataProviderFactory.getExcel().getData(0, i, j), DataProviderFactory.getExcel().getData(0, i, j));
+	 
+	for(int i=1;i<9;i++)
+	{
+		for(int j=0;j<2;j++)
+		{
+		String Name = DataProviderFactory.getExcel().getData(0, i, j);
+		
+		System.out.println(Name);
+
+		}
+		
 	}
+	
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	@AfterMethod
 	public void tearDown()

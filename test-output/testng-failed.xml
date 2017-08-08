@@ -5,7 +5,6 @@
     <classes>
       <class name="testCases.VerifyLoginPage">
         <methods>
-          <include name="tearDown"/>
           <include name="OpenLoginPage"/>
           <include name="setUp"/>
         </methods>

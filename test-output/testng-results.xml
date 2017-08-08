@@ -1,57 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29796" started-at="2017-08-01T13:58:54Z" finished-at="2017-08-01T13:59:24Z">
+  <suite name="Default suite" duration-ms="51501" started-at="2017-08-08T09:18:00Z" finished-at="2017-08-08T09:18:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29796" started-at="2017-08-01T13:58:54Z" finished-at="2017-08-01T13:59:24Z">
+    <test name="Default test" duration-ms="51501" started-at="2017-08-08T09:18:00Z" finished-at="2017-08-08T09:18:51Z">
       <class name="testCases.VerifyLoginPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="setUp" is-config="true" duration-ms="15177" started-at="2017-08-01T19:28:54Z" finished-at="2017-08-01T19:29:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="setUp" is-config="true" duration-ms="29022" started-at="2017-08-08T14:48:00Z" finished-at="2017-08-08T14:48:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="OpenLoginPage()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="OpenLoginPage" duration-ms="13363" started-at="2017-08-01T19:29:09Z" finished-at="2017-08-01T19:29:22Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:212)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:102)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:71)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at ApplicationPages.LoginPage.DashBoardTitleVerification(LoginPage.java:45)
-	at testCases.VerifyLoginPage.OpenLoginPage(VerifyLoginPage.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="OpenLoginPage()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="OpenLoginPage" duration-ms="19514" started-at="2017-08-08T14:48:29Z" finished-at="2017-08-08T14:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenLoginPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="tearDown" is-config="true" duration-ms="1210" started-at="2017-08-01T19:29:23Z" finished-at="2017-08-01T19:29:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="tearDown" is-config="true" duration-ms="2933" started-at="2017-08-08T14:48:48Z" finished-at="2017-08-08T14:48:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
