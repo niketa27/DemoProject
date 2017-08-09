@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import ApplicationPages.HomePage;
 import ApplicationPages.LoginPage;
+import ApplicationPages.ShoppingCategories;
 import Factory.BrowserFactory;
 import Factory.DataProviderFactory;
 
@@ -28,33 +29,38 @@ public class VerifyLoginPage {
 	    home.redirectToLoginPage();
 	    Thread.sleep(3000);
 	    LoginPage Login = PageFactory.initElements(driver,LoginPage.class);
-	  //  Login.LoginToApplication("zope.niketa@gmail.com", "niketa123");
-	 // Login.LoginToApplication(DataProviderFactory.getExcel().getData(0, 1, 0), DataProviderFactory.getExcel().getData(0, 1, 1));
+	  Login.LoginToApplication(DataProviderFactory.getExcel().getData(0, 1, 0), DataProviderFactory.getExcel().getData(0, 1, 1));
 	  //Login.DashBoardTitleVerification();
 	
 	 // Login.LoginToApplication(DataProviderFactory.getExcel().getData(0, i, j), DataProviderFactory.getExcel().getData(0, i, j));
 	 
-	for(int i=1;i<9;i++)
+/*	for(int i=1;i<9;i++)
 	{
 		for(int j=0;j<2;j++)
 		{
 		String Name = DataProviderFactory.getExcel().getData(0, i, j);
-		
-		System.out.println(Name);
-
 		}
 		
-	}
+	}*/
 	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+	@Test
+	public void ShoppingPage() throws Exception
+	{
+		HomePage home =PageFactory.initElements(driver, HomePage.class);
+		home.redirectToLoginPage();
+		Thread.sleep(4000);
+		
+		LoginPage login = PageFactory.initElements(driver,LoginPage.class);
+		login.LoginToApplication(DataProviderFactory.getExcel().getData(0, 1, 0),DataProviderFactory.getExcel().getData(0,1,1));
+		
+		ShoppingCategories Shop = PageFactory.initElements(driver, ShoppingCategories.class);
+		Shop.CategoriesForWomen();
+		Shop.HandleProductDetailsWindow();
+		
+		login.ParentWindowVerify();
+		
+	}
 	@AfterMethod
 	public void tearDown()
 	{

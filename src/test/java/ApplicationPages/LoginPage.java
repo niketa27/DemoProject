@@ -28,7 +28,9 @@ import org.testng.Assert;
 		
 		@FindBy(xpath="//a[text()=' Dashboard ']//following::div[2]")
 		WebElement DashboardTitle;
-		
+
+		@FindBy(xpath="//a[@href='index.php']")
+		WebElement HOME;
 		
 		public void LoginToApplication(String name, String pass) throws Exception
 		{
@@ -50,5 +52,10 @@ import org.testng.Assert;
 		
 			
 		}
-
+		public void ParentWindowVerify()
+		{
+			HOME.click();
+			String title = driver.getTitle();
+			System.out.println("Title For Parent Window Verify:" + title);
+		}
 	}

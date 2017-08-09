@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51501" started-at="2017-08-08T09:18:00Z" finished-at="2017-08-08T09:18:51Z">
+  <suite name="Default suite" duration-ms="95101" started-at="2017-08-08T17:30:41Z" finished-at="2017-08-08T17:32:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51501" started-at="2017-08-08T09:18:00Z" finished-at="2017-08-08T09:18:51Z">
+    <test name="Default test" duration-ms="95101" started-at="2017-08-08T17:30:41Z" finished-at="2017-08-08T17:32:16Z">
       <class name="testCases.VerifyLoginPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="setUp" is-config="true" duration-ms="29022" started-at="2017-08-08T14:48:00Z" finished-at="2017-08-08T14:48:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyLoginPage@12adfbe]" name="setUp" is-config="true" duration-ms="14279" started-at="2017-08-08T23:00:41Z" finished-at="2017-08-08T23:00:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="OpenLoginPage()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="OpenLoginPage" duration-ms="19514" started-at="2017-08-08T14:48:29Z" finished-at="2017-08-08T14:48:48Z">
+        <test-method status="PASS" signature="OpenLoginPage()[pri:0, instance:testCases.VerifyLoginPage@12adfbe]" name="OpenLoginPage" duration-ms="13399" started-at="2017-08-08T23:00:55Z" finished-at="2017-08-08T23:01:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenLoginPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyLoginPage@1832929]" name="tearDown" is-config="true" duration-ms="2933" started-at="2017-08-08T14:48:48Z" finished-at="2017-08-08T14:48:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyLoginPage@12adfbe]" name="tearDown" is-config="true" duration-ms="827" started-at="2017-08-08T23:01:08Z" finished-at="2017-08-08T23:01:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyLoginPage@12adfbe]" name="setUp" is-config="true" duration-ms="12809" started-at="2017-08-08T23:01:09Z" finished-at="2017-08-08T23:01:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ShoppingPage()[pri:0, instance:testCases.VerifyLoginPage@12adfbe]" name="ShoppingPage" duration-ms="52933" started-at="2017-08-08T23:01:22Z" finished-at="2017-08-08T23:02:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShoppingPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyLoginPage@12adfbe]" name="tearDown" is-config="true" duration-ms="819" started-at="2017-08-08T23:02:15Z" finished-at="2017-08-08T23:02:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
